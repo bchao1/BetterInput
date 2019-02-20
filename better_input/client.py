@@ -44,7 +44,8 @@ class BetterInput:
         self.put(''.join(self.buffer[self.pos:]) + ' ')
         self.put("\b" * (len(self.buffer) - self.pos + 1))
 
-    def input(self):
+    def input(self, q):
+        self.put(q)
         while True:
             c = getchar()
             i = c if c == UNDEFINED_KEY else ord(c)

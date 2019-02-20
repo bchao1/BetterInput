@@ -12,3 +12,21 @@
 ***
 > A better Python `input()` function.
 ***
+## Why `BetterInput`?
+
+Look what happens when your client wants to fix their typo, using the Python built-in `input()`:
+
+> <img src="./assets/gifs/input.gif">
+
+Now use `BetterInput`:
+
+> <img src="./assets/gifs/better_input.gif">
+
+## Usage
+```python
+from better_input import BetterInput
+
+client = BetterInput()
+result = client.input("Enter something: ")
+print(result)
+```
